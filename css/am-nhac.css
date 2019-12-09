@@ -1,0 +1,323 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	-o-object-fit: cover;
+	object-fit: cover;
+	background-size: cover;
+	background-position: center; 
+}
+ul{
+	list-style: none;
+}
+.header-slide{
+	background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/nen-amnhac.jpg);
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;overflow: hidden;
+	background-attachment: fixed;
+}
+.ten-ani {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow: 2px 2px 0 #000;
+  font-size: 3em;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.8;
+  animation: move 2s linear forwards;
+}
+
+.ten-ani span {
+  color: #FCFF02;
+  font-style: italic;
+}
+.cl-y{
+	color: darkgoldenrod;
+}
+@media (max-width: 767px) {
+  .ten-ani {
+    font-size: 2.6em;
+  }
+}
+
+@keyframes move {
+  50% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  to {
+    transform: translateX(-50%) scale(0.8);
+    top: 0;
+  }
+}
+.slideshow {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideshow img {
+  position: absolute;
+  max-width: 90vw;
+  max-height: 70vh;
+  opacity: 0;
+  animation: slideshow 36s ease-in-out infinite;
+}
+
+@keyframes slideshow {
+  from {
+    opacity: 0;
+    filter: grayscale(100%);
+  }
+
+  5% {
+    opacity: 1;
+    filter: grayscale(50%);
+  }
+
+  10% {
+    opacity: 1;
+    filter: grayscale(0);
+    transform: scale(1.1);
+  }
+
+  15% {
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  20% {
+    opacity: 0;
+    filter: blur(2px);
+    transform: scale(0.9);
+  }
+
+  25% {
+    opacity: 0;
+  }
+}
+
+.slideshow .i_1 {
+  animation-delay: 2s;
+  transform: translateX(-100px) rotate(-3deg);
+}
+
+.slideshow .i_2 {
+  animation-delay: 8s;
+  transform: translateX(100px) rotate(3deg);
+}
+
+.slideshow .i_3 {
+  animation-delay: 14s;
+  transform: translateY(-100px) rotate(3deg);
+}
+
+.slideshow .i_4 {
+  animation-delay: 20s;
+  transform: translateY(100px) rotate(-3deg);
+}
+
+.slideshow .i_5 {
+  animation-delay: 26s;
+  transform: rotate(-6deg);
+}
+
+.slideshow .i_6 {
+  animation-delay: 32s;
+  transform: rotate(6deg);
+}
+.underline{
+	display: block;
+	margin: auto;
+	width: 15%;
+}
+.viền{
+	width: 60%;
+	height: 350px;
+	display: block;
+	margin: auto;
+	position: relative;
+}
+.viền img{
+	width: 100%;
+	height: 350px;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	box-shadow: 4px 3px 5px 2px rgba(0,0,0,0.4);
+}
+.ten-gt:after{
+	content: "";
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+	border: 2px solid darkgoldenrod;
+	width: 100px;
+}
+.ten-gt-1:after{
+	content: "";
+	position: absolute;
+	bottom: -15px;
+	right: 0;
+	border: 2px solid darkgoldenrod;
+	width: 100px;
+}
+.nền-tổng{
+	background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/nền-cả-âm-nhạc.jpg);
+	width: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+.img-km{
+	height: 250px;
+    width: 100%;
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.img-kmm{
+	height: 574px;
+    width: 100%;
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.bấmĐc:hover{
+	color: darkgoldenrod;
+	transition: all 0.4s;
+}
+
+.slider-for img{
+	width: 860px;
+	height: 600px;
+	padding: 0 50px;
+	outline: none;
+}
+.slick-slide{
+	width: 100%;
+	height: 190px;
+	margin: 0 10px;
+}
+.slider-nav img{ 
+    padding: 3px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #fff;
+}
+.địaĐiểm{
+    margin: 0 120px;
+    display: block;
+    border-radius: 3px;
+}
+.địaĐiểm h4{
+	padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+.bt1f{
+	border-top: 1px solid #000;
+}
+.bor{
+	border-right: 1px solid #000;
+}
+.share a:hover{
+	color: #fff;
+	background-color: darkgoldenrod;
+	transition: all 0.4s;
+}
+.lt10{
+	left:10%;
+}
+.ta04s{
+	transition: all 0.4s;
+}
+.nghệSĩ:hover .pic-2{
+	opacity: 1;
+	transition: all 0.4s;
+}
+@media (min-width: 320px) and (max-width: 767px)
+{
+	.viền img{
+		top: 0;
+		right: 0;
+	}
+	.ten-gt:after{
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.ten-gt-1:after{
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.slider-for img{
+		padding: 0;
+		width: 1024px;
+		height: 300px;
+	}
+	.địaĐiểm{
+		margin: 0 15px;
+	}
+}
+@media (min-width: 768px) and (max-width: 1023px)
+{
+	.viền img{
+		top: 0;
+		right: 0;
+	}
+	.ten-gt:after{
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.ten-gt-1:after{
+		left: 50%;
+		transform: translateX(-50%);
+
+	}
+	.ten-gt-1{
+		margin-bottom: 30px;
+	}
+	.ten-gt,
+	.ten-gt-1{
+		text-align: center !important;
+	}
+	.img-km{
+		height: 500px;
+	}
+	.địaĐiểm{
+		margin: 0 45px;
+	}
+}
+@media (min-width: 1024px) and (max-width: 1200px)
+{
+	.ten-gt:after{
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.ten-gt-1:after{
+		left: 50%;
+		transform: translateX(-50%);
+
+	}
+	.địaĐiểm{
+		margin: 0 80px;
+	}
+}
