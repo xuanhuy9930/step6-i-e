@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PortFlolio</title>
+
+	<!-- CSS libs -->
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap-4.0.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/font-awesome-full-4.7/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick/slick-theme.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/port.css">
+	
+	<!-- <link rel="stylesheet" href="css/animate.css"> -->
+</head>
+<body>
+	<div id="port">
+		<div class="banner">
+			<div id="menu-full">
+				<div class="container menu">
+					<div class="logo">
+						<h2><a href="Portflolio.html">trịnh xuân huy</a></h2>
+						<h3><a href="Portflolio.html">front - end developer</a></h3>
+					</div>
+					<ul class="list-menu">
+						<li><a href="">Trang chủ</a></li>
+						<li><a href="">Giới thiệu</a></li>
+						<li><a href="">Liên hệ</a></li>
+						<span style="font-size:30px;cursor:pointer; display: none; color: #fff; margin-right: 5%;margin-top: 5%;" onclick="openNav()">&#9776;</span>
+					</ul>
+				</div>
+			</div>
+			<!-- menu chay theo -->
+			<div id="navbar">
+				<div class="container menu">
+					<div class="logo">
+						<h2><a href="Portflolio.html">trịnh xuân huy</a></h2>
+						<!-- <h3><a href="Portflolio.html">front - end developer</a></h3> -->
+					</div>
+					<ul class="list-menu">
+						<li><a href="">Trang Chủ</a></li>
+						<li><a href="">Giới Thiệu</a></li>
+						<li><a href="">Liên Hệ</a></li>
+						<span style="font-size:30px;cursor:pointer; display: none;color: #fff;margin-right: 5%;margin-top: 5%;" onclick="openNav()">&#9776;</span>
+					</ul>
+				</div>
+			</div>
+			<!-- menu responsive -->
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="#">Trang chủ</a>
+				<a href="#">Giới Thiệu</a>
+				<a href="#">Liên hệ</a>
+			</div>
+			<div class="container box-1">
+				<div class="img-myself">
+					<img src="images/3.jpg" alt="">
+				</div>
+				<div class="text-myself">
+					<h2>Trịnh Xuân Huy</h2>
+					<h3>Front - End Developer</h3>
+					<p>Tôi sẽ thiết kế ra những trang web mà khi khách hàng nhìn vào sẽ cảm nhận được sự trang trọng, lịch sự nhưng cũng không mất đi truyền thống của người Việt</p>
+					<ul>
+						<li><a href=""><i class="fa fa-calendar-check-o"></i> 02/10/1997</a></li>
+						<li><a href=""><i class="fa fa-phone"></i> 0363373385</a></li>
+						<li><a href=""><i class="fa fa-envelope-o"></i> xuanhuy9930@gmail.com</a></li>
+						<li><a href=""><i class="fa fa-globe"></i> Thành phố Bắc Ninh</a></li>
+					</ul>
+					<!-- <a href=""><i class="fa fa-facebook-square"></i></a>
+						<a href=""></a> -->
+					</div>
+				</div>
+			</div>
+			<div class="about-me container">
+				<div class="row" style="margin-top: 25%;">
+					<div class="col-md-5">
+						<h2 class="mb-5">Về bản thân</h2>
+						<p class="text-about">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam officia delectus magnam iste aspernatur aperiam voluptate aliquid, inventore cumque. Omnis assumenda voluptate in quisquam tempora tenetur magnam ratione corporis.
+						</p>
+						<ul class="social-icon">
+							<li><a href=""><i class="fa fa-facebook"></i></a></li>
+							<li><a href=""><i class="fa fa-skype"></i></a></li>
+							<li><a href=""><i class="fa fa-instagram"></i></a></li>
+						</ul>
+					</div>
+					<div class="col-md-7">
+						<h2 class="mb-5" style="padding-left: 5%;">Kỹ năng</h2>
+						<div class="skills">
+							<h3>HTML 82%</h3>
+							<div class="skill-content">
+								<div class="skill-content-1" style="width: 82%"></div>
+							</div>
+							<h3>CSS 74%</h3>
+							<div class="skill-content">
+								<div class="skill-content-1" style="width: 74%"></div>
+							</div>
+							<h3>JavaScript 53%</h3>
+							<div class="skill-content">
+								<div class="skill-content-1" style="width: 53%"></div>
+							</div>
+							<h3>JQuery 40%</h3>
+							<div class="skill-content">
+								<div class="skill-content-1" style="width: 40%"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="mb-5 mt-5 title">Sản phẩm hoàn thành</h2>
+				<div class="sanpham container">
+					<div class="sanpham-content-1">
+						<h4>Sản phẩm: <span>Liên hoan phim </span></h4>
+						<h5>TTS Công Ty I&E Việt Nam</h5>
+						<img style="height: 298px" src="images/thanhtich-2.png" alt="">
+					</div>
+					<div class="sanpham-content-2">
+						<h4>Sản phẩm: <span>Lịch sử VIệt Nam</span></h4>
+						<h5>TTS Công Ty I&E Việt Nam</h5>
+						<img style="height: 298px" src="images/thanhtich-3.png" alt="">
+					</div>
+					<div class="sanpham-content">
+						<h4>Sản phẩm: <span>Cat's coffee</span></h4>
+						<h5>TTS Công Ty I&E Việt Nam</h5>
+						<img src="images/thanhtich-1.png" alt="">
+					</div>
+				</div>
+
+			</div>
+			<div class="education">
+				<div class="container">
+					<div class="row footer">
+						<div class="col-md-6 touch">
+							<h2>get in touch</h2>
+							<p>định công thượng - hoàng mai - hà nội</p>
+						</div>
+						<div class="col-md-6">
+
+							<div class="row footer-1">
+								<div class="col-md-6 footer-2 pl-0 mb-3">
+									<input type="text" placeholder="Name *">
+								</div>
+								<div class="col-md-6 footer-2 pr-0 mb-3">
+									<input type="text" placeholder="Email *">
+								</div>
+								<div class="col-md-12 p-0 mb-3">
+									<input type="text" placeholder="Subject">
+								</div>
+								<textarea name="" id="" cols="60" rows="5" placeholder="Message" ></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="libs/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="libs/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="libs/slick-1.8.1/slick/slick.min.js"></script>
+	<script src="js/all-js.js"></script>
+	<!-- <script type="text/javascript" src="js/all-js.js"></script> -->
+<!-- <script src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/all-js.js"></script>
+<script>
+        new WOW().init();
+    </script> -->
+    </html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Du lịch đảo Cô Tô</title>
+
+	<!-- CSS libs -->
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap-4.0.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/font-awesome-full-4.7/css/font-awesome.min.css">
+<!-- 
+	<link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick/slick-theme.css"> -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/coto.css">
+</head>
+<body>
+	<section id="coto">
+		<header>
+			<div class="slide-banner">
+				<img src="images/nen-coto.jpg" alt="">
+			</div>
+			<div class=" menu-master">
+				<div class="logo">
+					<a href=""><img src="images/logo-coto.png" alt=""></a>
+				</div>
+				<div class="list-menu">
+					<ul>
+						<li><a href="">Trang chủ</a></li>
+						<li><a href="">Giới Thiệu</a></li>
+						<li class="drop-img-full">
+							<a href="">Thư viện ảnh <i class="fa fa-angle-down"></i></a>
+							<div class="drop-img">
+								<div class="row">
+									<div class="col-md-3">
+										<a href="">
+											<img src="images/anh-dep-3.jpg" alt="">
+											<p>Ảnh hơi đẹp</p>
+										</a>
+									</div>
+									<div class="col-md-3">
+										<a href="">
+											<img src="images/anh-dep-4.jpg" alt="">
+											<p>Ảnh hơi đẹp</p>
+										</a>
+									</div>
+									<div class="col-md-3">
+										<a href="">
+											<img src="images/anh-dep-5.jpg" alt="">
+											<p>Ảnh hơi đẹp</p>
+										</a>
+									</div>
+									<div class="col-md-3">
+										<a href="">
+											<img src="images/anh-dep-6.jpg" alt="">
+											<p>Ảnh hơi đẹp</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li><a href="">Blog</a></li>
+						<li><a href="">Liên Hệ</a></li>
+						<li><a href=""><i class="fa fa-search"></i></a></li>
+						<li><input type="text" placeholder="Search..."></li>
+						<li><a href=""><i class="fa fa-phone"></i> &ensp;0363373385</a></li>
+						<span style="font-size:30px;cursor:pointer; display: none;color: #fff;margin-right: 5%;margin-top: 5%;" onclick="openNava()">&#9776;</span>
+					</ul>
+				</div>
+			</div>
+			<!-- menu chay theo -->
+			<div id="navbar-1">
+				<div class="container menu">
+					<div class="logo">
+						<a href=""><img src="images/logo-coto.png" alt=""></a>
+					</div>
+					<div class="list-menu">
+						<ul>
+							<li><a href="">Trang chủ</a></li>
+							<li><a href="">Giới Thiệu</a></li>
+							<li class="drop-img-full">
+								<a href="">Thư viện ảnh <i class="fa fa-angle-down"></i></a>
+								<div class="drop-img">
+									<div class="row">
+										<div class="col-md-3">
+											<a href="">
+												<img src="images/anh-dep-3.jpg" alt="">
+												<p>Ảnh hơi đẹp</p>
+											</a>
+										</div>
+										<div class="col-md-3">
+											<a href="">
+												<img src="images/anh-dep-4.jpg" alt="">
+												<p>Ảnh hơi đẹp</p>
+											</a>
+										</div>
+										<div class="col-md-3">
+											<a href="">
+												<img src="images/anh-dep-5.jpg" alt="">
+												<p>Ảnh hơi đẹp</p>
+											</a>
+										</div>
+										<div class="col-md-3">
+											<a href="">
+												<img src="images/anh-dep-6.jpg" alt="">
+												<p>Ảnh hơi đẹp</p>
+											</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li><a href="">Blog</a></li>
+							<li><a href="">Liên Hệ</a></li>
+							<li><a href=""><i class="fa fa-search"></i></a></li>
+							<li><input type="text" placeholder="Search..."></li>
+							<li><a href=""><i class="fa fa-phone"></i> 0363373385</a></li>
+							<span style="font-size:30px;cursor:pointer; display: none;color: #fff;margin-right: 5%;margin-top: 5%;" onclick="openNava()">&#9776;</span>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- menu responsive -->
+			<div id="mySidenav-1" class="sidenav-1">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNava()">&times;</a>
+				<ul>
+					<li><input type="text" placeholder="Tìm Kiếm..."><i class="fa fa-search"></i></li>
+					<li><a href="">Trang chủ</a></li>
+					<li><a href="">Giới Thiệu</a></li>
+					<li><a href="">Thư viện ảnh</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">Liên Hệ</a></li>
+				</ul>
+			</div>
+			<div class="slider-good">
+				<div class="title-banner "></div>
+				<div class="title-banner-1 "></div>
+				<div class="title-banner-2 ">
+					<div id="carouselExampleIndicators" class="carousel slide img-slide" data-ride="carousel">
+						<!-- <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						</ol> -->
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block " src="images/gt-1.jpg" alt="First slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block " src="images/nen-port.jpg" alt="Second slide">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block " src="images/bg-lodge-03.jpg" alt="Third slide">
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="gioi-thieu">
+				<div class="container mt-5 mb-5">
+					<h2 class="title">Trải nghiệm <span>Cô tô</span></h2><br>
+					<div class="row ">
+
+						<div class="col-md-6 gt-img">
+							<img class="pic-1" src="images/gt-2.jpg" alt="">
+							<img class="pic-2" src="images/gt-3.jpg" alt="">
+						</div>
+						<div class="col-md-6 gt-text">
+							<h2>Review</h2>
+							<p>Cô Tô đẹp lắm ai ơi... Hè này nhất định sẽ đi Cô Tô với chúng bạn và người ấy ! <br>
+
+								Ưu điểm khi đi Cô Tô:
+							Rẻ, bãi biển trong sạch tuyệt đẹp, hải sản tươi ngon nhất rồi, nhiều cảnh quan rất lạ và đẹp check-in thì cực ảo, buổi chiều đi dạo bên bờ biển và ngắm hoàng hôn thì tâm trạng thư thái vô cùng nếu có thêm người yêu nữa thì ... thôi k còn gì để kể nữa ...</p><br>
+							<a class="view-all" href="">View all >></a>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="anh-dep">
+				<div class="anh-dep-coto container">
+					<h2 class="title-1">Ảnh đẹp <span>Cô Tô</span></h2>
+					<div class="row col-img">
+						<div class="col-md-3 khung-pic">
+							<div class="anh-dep-1"></div>
+							<div class="anh-dep-2">
+								<img src="images/coto-2.jpg" alt="">
+								<img class="abc" src="images/coto-3.jpg" alt="">
+								<h4>Bãi Đá Cầu Mị</h4>
+								<p><i class="fa fa-map-marker"></i> &ensp;Cô Tô</p>
+							</div>
+
+						</div>
+						<div class="col-md-3 khung-pic">
+							<div class="anh-dep-1"></div>
+							<div class="anh-dep-2">
+								<img src="images/coto-4.jpg" alt="">
+								<img class="abc" src="images/coto-5.jpg" alt="">
+								<h4>Bãi Tắm Vàn Chải</h4>
+								<p><i class="fa fa-map-marker"></i> &ensp;Cô Tô</p>
+							</div>
+
+						</div>
+						<div class="col-md-3 khung-pic">
+							<div class="anh-dep-1"></div>
+							<div class="anh-dep-2">
+								<img src="images/coto-6.jpg" alt="">
+								<img class="abc" src="images/coto-7.jpg" alt="">
+								<h4>Bãi Tắm Hồng Vàn</h4>
+								<p><i class="fa fa-map-marker"></i> &ensp;Cô Tô</p>
+							</div>
+
+						</div>
+						<div class="col-md-3 khung-pic">
+							<div class="anh-dep-1"></div>
+							<div class="anh-dep-2">
+								<img src="images/anh-dep-1.jpg" alt="">
+								<img class="abc" src="images/coto-9.jpg" alt="">
+								<h4>Cô Tô Con</h4>
+								<p><i class="fa fa-map-marker"></i> &ensp;Cô Tô Con</p>
+							</div>
+
+						</div>
+						<a class="xem-full" href="">Vào Kho Ảnh</a>
+					</div>
+				</div>
+			</section>
+			<section class="am-thuc">
+				<h2 class="title">Ẩm Thực <span>Cô Tô</span></h2>
+				<div class="container">
+					<div class="row pt-5">
+
+						<div class="col-md-6 dac-san">
+							<a href="">
+								<img src="images/am-thuc-1.jpg" alt="">
+								<p>Ốc móng tay xào xả ớt</p>
+							</a>
+						</div>
+						<div class="col-md-6 dac-san">
+							<a href="">
+								<img src="images/am-thuc-2.jpg" alt="">
+								<p>Mực 1 nắng Cô Tô</p>
+							</a>
+						</div>
+						<div class="col-md-4 dac-san-after">
+							<a href="">
+								<img src="images/am-thuc-3.jpg" alt="">
+								<p>Hải Sâm</p>
+							</a>
+						</div>
+						<div class="col-md-4 dac-san-after">
+							<a href="">
+								<img src="images/am-thuc-4.jpg" alt="">
+								<p>Bào Ngư</p>
+							</a>
+						</div>
+						<div class="col-md-4 dac-san-after">
+							<a href="">
+								<img src="images/am-thuc-5.jpg" alt="">
+								<p>Cù Kỳ</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="chi-phi">
+				<h2 class="title">Chi phí tới <span>Cô Tô</span></h2>
+				<div class="container cp-nen">
+					<div class="row mt-5 pt-4 pb-4">
+						<div class="col-md-4 box">
+							<div class="khung-cp">
+								<i class="fa fa-truck"></i>
+								<h4>Hà Nội -> Vân Đồn </h4>
+								<p>Hãy đi nhà xe uy tín, chi phí 120k - 200k</p>
+							</div>
+						</div>
+						<div class="col-md-4 box">
+							<div class="khung-cp">
+								<i class="fa fa-ship"></i>
+								<h4>Vân Đồn -> Cô Tô  </h4>
+								<p>Giá vé 250k 1 người (lượt đi)</p>
+							</div>
+						</div>
+						<div class="col-md-4 box">
+							<div class="khung-cp">
+								<i class="fa fa-power-off"></i>
+								<h4>Nghỉ ngơi và vui chơi </h4>
+								<p>Ở đảo 3 ngày 2 đêm</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="container">
+				<div class="row" style="padding: 5%">
+					<div class="col-md-4 footer">
+						<img src="images/logo-coto.png" alt="">
+						<p><i class="fa fa-map-marker"></i> Thị xã Cô Tô - Quảng Ninh</p>
+						<p><i class="fa fa-envelope-o"></i> xuanhuy9930@gmail.com</p>
+						<p><i class="fa fa-phone"></i> 0363 373 385</p>
+					</div>
+					<div class="col-md-4 footer-1">
+						<h4>Liên hệ Social</h4>
+						<a href=""><i class="fa fa-facebook-square"></i></a>
+						<a href=""><i class="fa fa-instagram"></i></a>
+						<a href=""><i class="fa fa-skype"></i></a>
+
+					</div>
+					<div class="col-md-4 footer-1">
+						<h4>Map</h4>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d476506.919969757!2d107.53873347209374!3d21.084229320438023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314b71b6abf8d8e5%3A0x3d85fe8787824958!2zQ8O0IFTDtCwgUXXhuqNuZyBOaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1574668208110!5m2!1svi!2s" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+</body><!-- 
+<script type="text/javascript" src="libs/jquery-3.4.1.min.js"></script> -->
+<script type="text/javascript" src="libs/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script> -->
+<script type="text/javascript" src="libs/slick-1.8.1/slick/slick.min.js"></script>
+<script src="js/all-js.js"></script>
+
+</html>

@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Món Ăn Việt Nam</title>
+
+	<!-- CSS libs -->
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap-4.0.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/font-awesome-full-4.7/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick/slick-theme.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Noto+Serif|Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/am-thuc-vn.css">
+	<link rel="stylesheet" href="css/inevn.css">
+</head>
+<body>
+	<div id="restaurant" style="overflow-x: hidden;">
+		<header>
+			<section id="header-1">
+				<div class="container pt5 pb5 df">
+					<h2 class="ffnoto fs15p w1"><i class="fa fa-map-marker pr15"></i> 54E - P.Thị Cầu - Tp.Bắc Ninh</h2>
+					<ul class="pa0 ma0 df jc-fe w1">
+						<li><a class="fs15p ffnoto log trans2" href="">Đăng ký </a></li>
+						<span class="mr5 ml5"> | </span>
+						<li><a class="fs15p ffnoto log trans2" href=""> Đăng nhập</a></li>
+					</ul>
+				</div>
+			</section>
+			<section class="header-1">
+				<div class="header-2" id="menu-res">
+					<div class="logo">
+						<img src="images/logo-3.png" alt="">
+					</div>
+					<div class="list-menu">
+						<ul class="list-menu-content pr ma0-xs">
+							<li><a class="pt5"href="">Trang Chủ</a></li>
+							<li class="hover-dacap1">
+								<a class="pt5"href="">Thực Đơn</a>
+								<ul class="menu-da-cap1 pa0">
+									<li class="b-bot"><a class="pt10 pb10" href="">Suất đặc biệt</a></li>
+									<li class="b-bot"><a class="pt10 pb10" href="">Bữa sáng</a></li>
+									<li class="b-bot"><a class="pt10 pb10" href="">Bữa trưa</a></li>
+									<li><a class="pt10 pb10" href="">Bữa tối</a></li>
+								</ul>
+							</li>
+							<li><a class="pt5" href="">Tin tức - Sự Kiện</a></li>
+							<li><a class="pt5" href="">Giới thiệu</a></li>
+							<li class="brb1p"><a class="pr35 ffnoto pt5" href="">Liên hệ</a></li>
+							<li><input class="pa5 br-20 on " type="text" placeholder="Tìm kiếm"><a href=""><i class="fa fa-search pa"></i></a></li>
+							<li><a href=""><i title="Đặt bàn" class="fa fa-shopping-basket pa10 color-w bgcr3 br5h"></i></a></li>
+							<span class="fs25 dn db-xs color-b pa" onclick="openNav()">&#9776;</span>
+						</ul>
+					</div>
+					<div id="myNav" class="overlay">
+						<a href="" class="closebtn" onclick="closeNav()">&times;</a>
+						<div class="overlay-content">
+							<ul class="ttc pl0">
+								<li><a href="">Trang chủ</a></li>
+								<li>
+									<a href="fl">Thực đơn</a>
+									<i class="fa fa-angle-right add color-w fr"></i>
+									<ul class="dn drop-down-1">
+										<li><a class="fs15" href="">Suất đặc biệt</a></li>
+										<li><a class="fs15" href="">Bữa sáng</a></li>
+										<li><a class="fs15" href="">Bữa trưa</a></li>
+										<li><a class="fs15" href="">Bữa tối</a></li>
+									</ul>
+								</li>
+								<li><a href="">Tin tức - sự kiện</a></li>
+								<li><a href="">Trang chủ</a></li>
+								<li><a href="">Liên hệ</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+			<section class="slide-img">
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img class="d-block w-100" src="images/slider-rst-1.jpg" alt="First slide">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="images/slider-rst-1.jpg" alt="Second slide">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="images/slider-rst-1.jpg" alt="Third slide">
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+				<div class="title-slider">
+					<img src="images/slide3-logo.png" alt="">
+					<h2>Món ăn Việt Nam</h2>
+					<h4 class="mt10 mb10">Tinh túy đất trời</h4>
+					<p>Trải nghiệm ẩm thực với phong cách tiệc buffet ngày nay đã trở thành trào lưu ẩm thực khá phổ biến và quen thuộc đối với đời sống con người. Một nơi sang trọng, ấm cúng để ta được thưởng thức hàng trăm món ăn hấp dẫn khác nhau.</p>
+				</div>
+			</section>
+			<section class="thuc-don">
+				<div class="container">
+					<div class="row pt-5 pb-5">
+						<div class="col-md-4">
+							<div class="bua-an">
+								<img src="images/an-sang.webp" alt="">
+								<h2 class="an">Ăn sáng</h2>
+								<p>Tổng hợp các món ăn sáng với đầy đủ thành phần dinh dưỡng.</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="bua-an">
+								<img src="images/an-trua.webp" alt="">
+								<h2 class="an">Ăn trưa</h2>
+								<p>Chuyên các món ăn no cùng thực đơn đa dạng, nhiều hương vị.</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="bua-an">
+								<img src="images/an-toi.webp" alt="">
+								<h2 class="an">Ăn tối</h2>
+								<p>Bữa tối ấm áp cùng các món ăn nóng sốt, khác biệt và hấp dẫn.</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</section>
+		</header>
+		<main>
+			<section class="buffet mb-5">
+				<div class="container-thucdon">
+					<div class="title-thucdon">
+						<img src="images/title.png" alt="">
+						<h2>Thực đơn hôm nay</h2>
+						<p class="mt5 mb30">Thực đơn buffet phong phú có hơn 50 món do chính tay đầu bếp giàu kinh nghiệm lựa chọn</p>
+					</div>
+					<div class="tab">
+						<button class="tablinks" href="#" onclick="openBuffet(event, 'thitbo',)">Suất Đặc Biệt</button>
+						<button class="tablinks" href="#" onclick="openBuffet(event, 'haisan')">Bữa Sáng</button>
+						<button class="tablinks" href="#" onclick="openBuffet(event, 'rau')">Bữa Trưa</button>
+						<button class="tablinks" href="#" onclick="openBuffet(event, 'co')">Bữa Tối</button>
+					</div>
+					<div id="thitbo" class="tabcontent actives ">
+						<div class="row thucdon-full">
+							<div class="col-md-6 thucdon-menu">
+								<div class="img-thuc-don">
+									<a href="">
+										<img class="img-scale" src="images/buffet-1.jpg" alt="">
+									</a>
+								</div>
+								<div class="ten-thucdon">
+									<div class="tien-thucdon">
+										<h4>Ba chỉ nướng than</h4>
+										<h3 class="gia">600.000 vnđ</h3>
+									</div>
+									<p>Dù có thêm nhiều hương vị ra sao thì chocolate vẫn được coi là một...</p>
+								</div>
+							</div>
+							<div class="col-md-6 thucdon-menu">
+								<div class="img-thuc-don">
+									<a href="">
+										<img class="img-scale" src="images/buffet-4.jpg" alt="">
+									</a>
+								</div>
+								<div class="ten-thucdon">
+									<div class="tien-thucdon">
+										<h4>Mực chiên giòn</h4>
+										<h3 class="gia">350.000 vnđ</h3>
+									</div>
+									<p>Dù có thêm nhiều hương vị ra sao thì mực vẫn được coi là một...</p>
+								</div>
+							</div>
+							<div class="col-md-6 thucdon-menu">
+								<div class="img-thuc-don">
+									<a href="">
+										<img class="img-scale" src="images/buffet-5.jpg" alt="">
+									</a>
+								</div>
+								<div class="ten-thucdon">
+									<div class="tien-thucdon">
+										<h4>Ba chỉ nướng than</h4>
+										<h3 class="gia">250.000 vnđ</h3>
+									</div>
+									<p>Dù có thêm nhiều hương vị ra sao thì chocolate vẫn được coi là một...</p>
+								</div>
+							</div>
+							<div class="col-md-6 thucdon-menu">
+								<div class="img-thuc-don">
+									<a href="">
+										<img class="img-scale" src="images/buffet-6.jpg" alt="">
+									</a>
+								</div>
+								<div class="ten-thucdon">
+									<div class="tien-thucdon">
+										<h4>Bít tết</h4>
+										<h3 class="gia">700.000 vnđ</h3>
+									</div>
+									<p>Dù có thêm nhiều hương vị ra sao thì mực vẫn được coi là một...</p>
+								</div>
+							</div>
+							<div class="col-md-6 thucdon-menu">
+								<div class="img-thuc-don">
+									<a href="">
+										<img class="img-scale" src="images/socola.webp" alt="">
+									</a>
+								</div>
+								<div class="ten-thucdon">
+									<div class="tien-thucdon">
+										<h4>Socola hạt vừng</h4>
+										<h3 class="gia">200.000 vnđ</h3>
+									</div>
+									<p>Dù có thêm nhiều hương vị ra sao thì chocolate vẫn được coi là một...</p>
+								</div>
+							</div>
+							<div class="col-md-6 thucdon-menu">
+								<div class="img-thuc-don">
+									<a href="">
+										<img class="img-scale" src="images/nuoc.webp" alt="">
+									</a>
+								</div>
+								<div class="ten-thucdon">
+									<div class="tien-thucdon">
+										<h4>Nước Ngon</h4>
+										<h3 class="gia">150.000 vnđ</h3>
+									</div>
+									<p>Dù có thêm nhiều hương vị ra sao thì mực vẫn được coi là một...</p>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div id="haisan" class="tabcontent">
+						<div class="row thucdon-full">
+							<div class="col-md-6 thucdon-menu">
+								<div class="img-thuc-don">
+									<a href="">
+										<img class="img-scale" src="images/an-sang-1.jpg" alt="">
+									</a>
+								</div>
+								<div class="ten-thucdon">
+									<div class="tien-thucdon">
+										<h4>Phở bò</h4>
+										<h3 class="gia">70.000 vnđ</h3>
+									</div>
+									<p>Dù có thêm nhiều hương vị ra sao thì chocolate vẫn được coi là một...</p>
+								</div>
+							</div>
+							<div class="col-md-6 thucdon-menu">
+								<div class="img-thuc-don">
+									<a href="">
+										<img class="img-scale" src="images/an-sang-2.jpg" alt="">
+									</a>
+								</div>
+								<div class="ten-thucdon">
+									<div class="tien-thucdon">
+										<h4>Cháo hải sản</h4>
+										<h3 class="gia">50.000 vnđ</h3>
+									</div>
+									<p>Dù có thêm nhiều hương vị ra sao thì mực vẫn được coi là một...</p>
+								</div>
+							</div>
+							<div class="col-md-6 thucdon-menu">
+								<div class="img-thuc-don">
+									<a href="">
+										<img class="img-scale" src="images/an-sang-3.jpg" alt="">
+									</a>
+								</div>
+								<div class="ten-thucdon">
+									<div class="tien-thucdon">
+										<h4>Bún Huế</h4>
+										<h3 class="gia">60.000 vnđ</h3>
+									</div>
+									<p>Dù có thêm nhiều hương vị ra sao thì chocolate vẫn được coi là một...</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="rau" class="tabcontent">
+						<div class="row thucdon-full">
+							<div class="col-md-6 thucdon-menu">
+								<div class="img-thuc-don">
+									<a href="">
+										<img class="img-scale" src="images/buffet-1.jpg" alt="">
+									</a>
+								</div>
+								<div class="ten-thucdon">
+									<div class="tien-thucdon">
+										<h4>Ba chỉ nướng than</h4>
+										<h3 class="gia">600.000 vnđ</h3>
+									</div>
+									<p>Dù có thêm nhiều hương vị ra sao thì chocolate vẫn được coi là một...</p>
+								</div>
+							</div>
+							<div class="col-md-6 thucdon-menu">
+								<div class="img-thuc-don">
+									<a href="">
+										<img class="img-scale" src="images/an-trua-1.jpg" alt="">
+									</a>
+								</div>
+								<div class="ten-thucdon">
+									<div class="tien-thucdon">
+										<h4>Tôm hùm xào cay</h4>
+										<h3 class="gia">350.000 vnđ</h3>
+									</div>
+									<p>Dù có thêm nhiều hương vị ra sao thì mực vẫn được coi là một...</p>
+								</div>
+							</div>
+							<div class="col-md-6 thucdon-menu">
+								<div class="img-thuc-don">
+									<a href="">
+										<img class="img-scale" src="images/buffet-5.jpg" alt="">
+									</a>
+								</div>
+								<div class="ten-thucdon">
+									<div class="tien-thucdon">
+										<h4>Ba chỉ nướng than</h4>
+										<h3 class="gia">250.000 vnđ</h3>
+									</div>
+									<p>Dù có thêm nhiều hương vị ra sao thì chocolate vẫn được coi là một...</p>
+								</div>
+							</div>
+							<div class="col-md-6 thucdon-menu">
+								<div class="img-thuc-don">
+									<a href="">
+										<img class="img-scale" src="images/buffet-6.jpg" alt="">
+									</a>
+								</div>
+								<div class="ten-thucdon">
+									<div class="tien-thucdon">
+										<h4>Bít tết</h4>
+										<h3 class="gia">700.000 vnđ</h3>
+									</div>
+									<p>Dù có thêm nhiều hương vị ra sao thì mực vẫn được coi là một...</p>
+								</div>
+							</div>
+							<div class="col-md-6 thucdon-menu">
+								<div class="img-thuc-don">
+									<a href="">
+										<img class="img-scale" src="images/socola.webp" alt="">
+									</a>
+								</div>
+								<div class="ten-thucdon">
+									<div class="tien-thucdon">
+										<h4>Socola hạt vừng</h4>
+										<h3 class="gia">200.000 vnđ</h3>
+									</div>
+									<p>Dù có thêm nhiều hương vị ra sao thì chocolate vẫn được coi là một...</p>
+								</div>
+							</div>
+							<div class="col-md-6 thucdon-menu">
+								<div class="img-thuc-don">
+									<a href="">
+										<img class="img-scale" src="images/nuoc.webp" alt="">
+									</a>
+								</div>
+								<div class="ten-thucdon">
+									<div class="tien-thucdon">
+										<h4>Nước Ngon</h4>
+										<h3 class="gia">150.000 vnđ</h3>
+									</div>
+									<p>Dù có thêm nhiều hương vị ra sao thì mực vẫn được coi là một...</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="co" class="tabcontent">
+						<div class="row thucdon-full">
+							<div class="col-md-6 thucdon-menu">
+								<div class="img-thuc-don">
+									<a href="">
+										<img class="img-scale" src="images/mit.webp" alt="">
+									</a>
+								</div>
+								<div class="ten-thucdon">
+									<div class="tien-thucdon">
+										<h4>Mít non nhồi ngũ vị</h4>
+										<h3 class="gia">300.000 vnđ</h3>
+									</div>
+									<p>Dù có thêm nhiều hương vị ra sao thì chocolate vẫn được coi là một...</p>
+								</div>
+							</div>
+							<div class="col-md-6 thucdon-menu">
+								<div class="img-thuc-don">
+									<a href="">
+										<img class="img-scale" src="images/an-toi-1.jpg" alt="">
+									</a>
+								</div>
+								<div class="ten-thucdon">
+									<div class="tien-thucdon">
+										<h4>Hàu nước cốt dừa</h4>
+										<h3 class="gia">650.000 vnđ</h3>
+									</div>
+									<p>Dù có thêm nhiều hương vị ra sao thì mực vẫn được coi là một...</p>
+								</div>
+							</div>
+							<div class="col-md-6 thucdon-menu">
+								<div class="img-thuc-don">
+									<a href="">
+										<img class="img-scale" src="images/an-toi-2.jpg" alt="">
+									</a>
+								</div>
+								<div class="ten-thucdon">
+									<div class="tien-thucdon">
+										<h4>Bào ngư xào</h4>
+										<h3 class="gia">950.000 vnđ</h3>
+									</div>
+									<p>Dù có thêm nhiều hương vị ra sao thì chocolate vẫn được coi là một...</p>
+								</div>
+							</div>
+							<div class="col-md-6 thucdon-menu">
+								<div class="img-thuc-don">
+									<a href="">
+										<img class="img-scale" src="images/buffet-6.jpg" alt="">
+									</a>
+								</div>
+								<div class="ten-thucdon">
+									<div class="tien-thucdon">
+										<h4>Bít tết</h4>
+										<h3 class="gia">700.000 vnđ</h3>
+									</div>
+									<p>Dù có thêm nhiều hương vị ra sao thì mực vẫn được coi là một...</p>
+								</div>
+							</div>
+							<div class="col-md-6 thucdon-menu">
+								<div class="img-thuc-don">
+									<a href="">
+										<img class="img-scale" src="images/socola.webp" alt="">
+									</a>
+								</div>
+								<div class="ten-thucdon">
+									<div class="tien-thucdon">
+										<h4>Socola hạt vừng</h4>
+										<h3 class="gia">200.000 vnđ</h3>
+									</div>
+									<p>Dù có thêm nhiều hương vị ra sao thì chocolate vẫn được coi là một...</p>
+								</div>
+							</div>
+							<div class="col-md-6 thucdon-menu">
+								<div class="img-thuc-don">
+									<a href="">
+										<img class="img-scale" src="images/nuoc.webp" alt="">
+									</a>
+								</div>
+								<div class="ten-thucdon">
+									<div class="tien-thucdon">
+										<h4>Nước Ngon</h4>
+										<h3 class="gia">150.000 vnđ</h3>
+									</div>
+									<p>Dù có thêm nhiều hương vị ra sao thì mực vẫn được coi là một...</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="thucdon-dexuat text-center">
+				<div class="text-dexuat">
+					<h2 class="fs2 fs14-xs ttc mb25">Thực đơn đặc biệt</h2>
+					<h3 class="color-r fs25 fs2-xs ttc mb50">Bếp trưởng đề xuất</h3>
+				</div>
+				<div class="box-monan container">
+					<div class="row">
+						<div class="col-md-4 box-goiy mt20-xs">
+							<div class="food-special">
+								<a href="">
+									<img class="bra50" src="images/an-toi-2.jpg" alt="">
+								</a>
+							</div>
+							<div class="food-special-text">
+								<h2 class="fs14 pa10 fwb">600,000đ</h2>
+								<h3 class="fs14 color-r mb15">Món ăn chính</h3>
+								<h4 class="fs14 fwb ttc">Hải sản thập cẩm</h4>
+							</div>
+						</div>
+						<div class="col-md-4 box-goiy mt20-xs">
+							<div class="food-special">
+								<a href="">
+									<img class="bra50" src="images/an-sang-2.jpg" alt="">
+								</a>
+							</div>
+							<div class="food-special-text">
+								<h2 class="fs14 pa10 fwb">200,000đ</h2>
+								<h3 class="fs14 color-r mb15">Món ăn sáng</h3>
+								<h4 class="fs14 fwb ttc">Cháo hải sản</h4>
+							</div>
+						</div>
+						<div class="col-md-4 box-goiy mt20-xs">
+							<div class="food-special">
+								<a href="">
+									<img class="bra50" src="images/an-trua-1.jpg" alt="">
+								</a>
+							</div>
+							<div class="food-special-text">
+								<h2 class="fs14 pa10 fwb">600,000đ</h2>
+								<h3 class="fs14 color-r mb15">Món ăn trưa</h3>
+								<h4 class="fs14 fwb ttc">Hàu xào cay</h4>
+							</div>
+						</div>
+						<div class="col-md-4 box-goiy mt20-xs">
+							<div class="food-special">
+								<a href="">
+									<img class="bra50" src="images/buffet-2.jpg" alt="">
+								</a>
+							</div>
+							<div class="food-special-text">
+								<h2 class="fs14 pa10 fwb">450,000đ</h2>
+								<h3 class="fs14 color-r mb15">Món ăn chính</h3>
+								<h4 class="fs14 fwb ttc">Hàu nướng</h4>
+							</div>
+						</div>
+						<div class="col-md-4 box-goiy mt20-xs">
+							<div class="food-special">
+								<a href="">
+									<img class="bra50" src="images/nuoc.webp" alt="">
+								</a>
+							</div>
+							<div class="food-special-text">
+								<h2 class="fs14 pa10 fwb">100,000đ</h2>
+								<h3 class="fs14 color-r mb15">Món khai vị</h3>
+								<h4 class="fs14 fwb ttc">Nước ngọt</h4>
+							</div>
+						</div>
+						<div class="col-md-4 box-goiy mt20-xs">
+							<div class="food-special">
+								<a href="">
+									<img class="bra50" src="images/am-thuc-5.jpg" alt="">
+								</a>
+							</div>
+							<div class="food-special-text">
+								<h2 class="fs14 pa10 fwb">250,000đ</h2>
+								<h3 class="fs14 color-r mb15">Món khai vị</h3>
+								<h4 class="fs14 fwb ttc">Cù kỳ rang muối</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="thanh-tich">
+				<div class="gt-tt container">
+					<div class="row text-center mt-5 mb-5 ">
+						<div class="col-md-3 mb30-xs">
+							<i class="fa fa-camera color-w fs3 mb15 ma0-xs"></i><br>
+							<span class="fs2 fs2-xs fs2-sm color-r fwb mb15 counter">2000 +</span>
+							<h2 class="fs18 fs14-xs fs11-sm ttc color-w ffnoto">Check in</h2>
+						</div>
+						<div class="col-md-3 mb30-xs">
+							<i class="fa fa-users color-w fs3 mb15 ma0-xs"></i><br>
+							<span class="fs2 fs2-xs fs2-sm color-r fwb mb15 counter">1500 +</span>
+							<h2 class="fs18 fs14-xs fs11-sm ttc color-w ffnoto">Khách hàng</h2>
+						</div>
+						<div class="col-md-3 mb30-xs">
+							<i class="fa fa-coffee color-w fs3 mb15 ma0-xs"></i><br>
+							<span class="fs2 fs2-xs fs2-sm color-r fwb mb15 counter">10</span>
+							<h2 class="fs18 fs14-xs fs11-sm ttc color-w ffnoto">Kinh nghiệm</h2>
+						</div>
+						<div class="col-md-3 mb30-xs">
+							<i class="fa fa-cutlery color-w fs3 mb15 ma0-xs"></i><br>
+							<span class="fs2 fs2-xs fs2-sm color-r fwb mb15 counter">96</span>
+							<h2 class="fs18 fs14-xs fs11-sm ttc color-w ffnoto">Đầu bếp</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="nxet-ttuc">
+				<div class="row">
+					<div class="col-md-6 nx-left b-color-r  color-w pt50 ">
+						<h2 class="text-center fs18 fs14-xs fs14-sm ttc fwb ffnoto">Cảm nhận của khách hàng</h2>
+						<div class="nhan-xet-full">
+							<div class="nhan-xet mt40 mb40 pr50 pl50 on">
+								<img class="img-nx mr15 bra50 pa10" src="images/khach-hang-1.jpg" alt="">
+								<p class="taj fs08-xs">Thực đơn thay đổi mỗi ngày và phần lớn các món ăn Việt Nam đều có ở đây. Là một người chuộng truyền thống, IziFood chính là nhà hàng mình...</p>
+								<h4 class="ttc fs14 tac w1 mt15 fs1-xs">Trần Thị kim chi</h4>
+							</div>
+							<div class="nhan-xet mt40 mb40 pr50 pl50 on">
+								<img class="img-nx mr15 bra50 pa10" src="images/khach-hang-2.webp" alt="">
+								<p class="taj fs08-xs">Thực đơn thay đổi mỗi ngày và phần lớn các món ăn Việt Nam đều có ở đây. Là một người chuộng truyền thống, IziFood chính là nhà hàng mình...</p>
+								<h4 class="ttc fs14 tac w1 mt15 fs1-xs">Trần đặng nam phong</h4>
+							</div>
+							<div class="nhan-xet mt40 mb40 pr50 pl50 on">
+								<img class="img-nx mr15 bra50 pa10" src="images/khach-hang-3.webp" alt="">
+								<p class="taj fs08-xs">Thực đơn thay đổi mỗi ngày và phần lớn các món ăn Việt Nam đều có ở đây. Là một người chuộng truyền thống, IziFood chính là nhà hàng mình....</p>
+								<h4 class="ttc fs14 tac w1 mt15 fs1-xs">Lê Thúy</h4>
+							</div>
+						</div>
+						
+					</div>	
+					<div class="col-md-6 nx-left pt50 ">
+						<h2 class="text-center fs18 fs14-sm ttc fwb fs14-xs ffnoto">Bài viết mới</h2>
+						<div class="bai-viet-full">
+							<div class="bai-viet mt40 mb40 pr50 pl50 on">
+								<img class="img-nx mr15" src="images/thit-ga.webp" alt="">
+								<a class="fwb fs12" href="">Cách làm gà ngon ngày tết</a>
+								<p class="taj fs08-xs">Gà luộc là món ăn không thể thiếu trong mâm cỗ bày lên bàn thờ dịp Tết. Luộc gà sao đẹp mắt và ngon miệng không phải ai cũng biết cách. Cùng học cách luộc gà ngon ngày Tết.</p>
+								<a class="color-r tdn fwb fr mt15" href="">Xem thêm >></a>
+							</div>
+							<div class="bai-viet mt40 mb40 pr50 pl50 on">
+								<img class="img-nx mr15" src="images/bai-viet-2.webp" alt="">
+								<a class="fwb fs12" href="">Cách làm muối ớt xanh dễ làm</a>
+								<p class="taj fs08-xs">Muối ớt xanh là đặc sản nổi tiếng của Nha Trang, được dùng để chấm với hải sản sẽ tạo nên hương vị đặc trưng. Dưới đây là công thức làm muối ớt xanh nổi tiếng nhất.</p> 
+								<a class="color-r tdn fwb fr mt15" href="">Xem thêm >></a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="sp-khuyenmai mt50 mb50">
+					<div class="title-khuyenmai tac">
+						<img src="images/khuyen-mai.png" alt="">
+						<h2 class="fflop ttc fs18 mt15 mb30">sản phẩm khuyến mãi</h2>
+					</div>
+					<div class="sanpham-khuyenmai container">
+						<div class="col-md-3 col-sm-3 pa0">
+							<img class="w1 img-km" src="images/khuyen-mai-1.jpg" alt="">
+							<img class="w1 img-km mt10" src="images/khuyen-mai-2.jpg" alt="">
+						</div>
+						<div class="col-md-6 col-sm-6 mb30-xs mt30-xs pa0-xs ma0-sm">
+							<img class="w1 img1-km" src="images/khuyen-mai-3.jpg" alt="">
+						</div>	
+						<div class="col-md-3 col-sm-3 pa0">
+							<img class="w1 img-km" src="images/khuyen-mai-4.jpg" alt="">
+							<img class="w1 img-km mt10" src="images/khuyen-mai-5.jpg" alt="">
+						</div>
+					</div>
+				</section>
+			</main>
+			<!-- back-to-top -->
+					<a class="ontop pf bgcbf" href="#"><i class="fa fa-arrow-up"></i></a>
+			<footer>
+				<div class="footer-tong color-w">
+					<div class="plane-mail tac pr pt40">
+						<img src="images/plane.png" alt="">
+						<h2 class="fflop fs18 ttc fwb mt25 mb15">Bản tin</h2>
+						<p>Đăng kí nhận bản tin ngay để được nhận nhưng thông tin ưu đãi sớm nhất</p>
+						<input class="w60 w1-xs pa10 bra30 mt15 on" type="text" placeholder="Nhập địa chỉ email">
+						<a class="ttc db fflop pa dang-ky" href="">Đăng ký</a>
+					</div>
+					<div class="footer-content container mt50 pb50">
+						<div class="row">
+							<div class="col-md-4">
+								<h2 class="ttc fwb fs18 fflop mb50">thời gian</h2>
+								<ul class="pa0 ma0">
+									<li class="df b-bot pb10 mt10">
+										<h3 class="w1">Thứ 2</h3>
+										<h4 class="df jc-fe w1">8:00 - 21:00</h4>
+									</li>
+									<li class="df b-bot pb10 mt10">
+										<h3 class="w1">Thứ 3</h3>
+										<h4 class="df jc-fe w1">8:00 - 21:00</h4>
+									</li>
+									<li class="df b-bot pb10 mt10">
+										<h3 class="w1">Thứ 4</h3>
+										<h4 class="df jc-fe w1">8:00 - 21:00</h4>
+									</li>
+									<li class="df b-bot pb10 mt10">
+										<h3 class="w1">Thứ 5</h3>
+										<h4 class="df jc-fe w1">8:00 - 21:00</h4>
+									</li>
+									<li class="df pb10 mt10">
+										<h3 class="w1">Thứ 6</h3>
+										<h4 class="df jc-fe w1">8:00 - 21:00</h4>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-4">
+								<h2 class="ttc fwb fs18 fflop mb50">Liên hệ</h2>
+								<ul class="pa0 ma0">
+									<li class="df mb15"><i class="fa fa-home db pa5 bg-i br5h mr25"></i> <p class="fs09-sm">Địa chỉ: 54E, P. Thị Cầu, Tp.Bắc Ninh</p></li>
+									<li class="df mb15"><i class="fa fa-envelope db pa5 bg-i br5h mr25"></i> <p class="fs09-sm">Email: xuanhuy9930@gmail.com</p></li>
+									<li class="df mb15"><i class="fa fa-phone db pa5 bg-i br5h mr25"></i> <p class="fs09-sm"> Hotline: 0363.373.385</p></li>
+								</ul>
+								<ul class="pa0 df mt30">
+									<li><a href=""><i class="fa fa-facebook b-icon bra50 bgcbd tac pt10 mr10"></i></a></li>
+									<li><a href=""><i class="fa fa-twitter b-icon bra50 bgcbl tac pt10 mr10"></i></a></li>
+									<li><a href=""><i class="fa fa-google-plus b-icon bra50 bgcb3 tac pt10 mr10"></i></a></li>
+									<li><a href=""><i class="fa fa-youtube b-icon bra50 bgcry tac pt10 mr10"></i></a></li>
+								</ul>
+							</div>
+							<div class="col-md-4">
+								<h2 class="ttc fwb fs18 fflop mb50">Gửi Liên hệ</h2>
+								<div class="row lien-he">
+									<div class="col-md-6 pl0 pl15-xs mb10-xs">
+										<input class="on br5h pt5 pb5 b-in color-w pl30 w1-xs w1-sm w1-lg " type="text" placeholder="Tên của bạn">
+									</div>
+									<div class="col-md-6">
+										<input class="on br5h pt5 pb5 b-in color-w pl30 w1-xs w1-sm w1-lg" type="text" placeholder="Email của bạn">
+									</div>
+									<div class="col-md-12 mt30 pl0 pl15-xs">
+										<textarea class="on br5h b-in color-w pl30 w1-xs w1-sm w1-lg" width="100%" name="" id="" cols="48" rows="7" placeholder="Nội dung"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+<script type="text/javascript" src="libs/jquery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="libs/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="libs/slick-1.8.1/slick/slick.min.js"></script>
+<script src="js/restaurant.js"></script>
+
+</html>
