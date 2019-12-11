@@ -308,7 +308,8 @@ ul{
 }
 .title-1{
 	text-align: center;
-	text-transform: capitalize;
+	text-transform: uppercase;
+	font-weight: bold;
 	color: #fff;
 }
 .title-1 span{
@@ -449,6 +450,11 @@ ul{
 .anh-dep-2 i{
 	color: orange;
 }
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 .xem-full{
 	padding: 10px 26px;
     border: 2px solid #fff;
@@ -472,27 +478,38 @@ ul{
 .am-thuc{
 	padding: 5% 0;
 }
-.dac-san img{
+.khung-trai{
 	position: relative;
-	overflow: hidden;
-	height: 360px;
+    overflow: hidden;
+    height: 340px;
+    width: 90%;
+    display: block;
+    float: left;
+}
+.khung-an{
+	position: relative;
+    overflow: hidden;
+    height: 340px;
+    width: 90%;
+    display: block;
+    float: right;
+}
+.dac-san img{
 	width: 100%;
+	height: 340px;
 }
 .dac-san p{
 	position: absolute;
     bottom: 0;
-    left: 6%;
     margin-bottom: 0;
     text-align: center;
     display: block;
-    width: 94%;
+    width: 100%;
     padding: 10px 0;
     background: rgba(0,0,0,0.4);
     color: #fff;
     font-size: 20px;
-    transform: translateX(-3%);
     text-transform: capitalize;
-
 }
 .dac-san-after img{
 	position: relative;
@@ -596,7 +613,7 @@ footer{
 		display: none;
 	}
 	.slide-banner img{
-		    height: 65vh;
+		height: 65vh;
 	}
 	#navbar-1 .menu{
 		display: flex;
@@ -642,9 +659,14 @@ footer{
 	.chi-phi .title{
 		margin-top: 5%;
 	}
+	.khung-an,
+	.khung-trai{
+		float: none;
+		width: 100%;
+	}
 	.dac-san p{
-		left: 8%;
-		width: 90%;
+		
+		width: 100%;
 	}
 	.dac-san-after p{
 		width: 91%;
@@ -722,6 +744,7 @@ footer{
 	}
 	.title{
 		margin-top: 28%;
+
 	}
 	.dac-san,
 	.dac-san-1,
@@ -729,9 +752,18 @@ footer{
 	.chi-phi .title{
 		margin-top: 5%;
 	}
+	.dac-san img{
+		
+		width: 100%;
+	}
 	.dac-san p{
-		left: 8%;
-		width: 90%;
+		
+		width: 100%;
+	}
+	.khung-an,
+	.khung-trai{
+		float: none;
+		width: 100%;
 	}
 	.dac-san-after p{
 		width: 91%;
@@ -816,9 +848,14 @@ footer{
 	.chi-phi .title{
 		margin-top: 5%;
 	}
+	.khung-an,
+	.khung-trai{
+		float: none;
+		width: 100%;
+	}
 	.dac-san p{
-		left: 8%;
-		width: 90%;
+		
+		width: 100%;
 	}
 	.dac-san-after p{
 		width: 91%;
@@ -903,9 +940,14 @@ footer{
 	.chi-phi .title{
 		margin-top: 5%;
 	}
+	.khung-an,
+	.khung-trai{
+		float: none;
+		width: 100%;
+	}
 	.dac-san p{
-		left: 8%;
-		width: 90%;
+		
+		width: 100%;
 	}
 	.dac-san-after p{
 		width: 91%;
@@ -1006,8 +1048,8 @@ footer{
 		margin-top: 5%;
 	}
 	.dac-san p{
-		left: 8%;
-		width: 90%;
+		
+		width: 100%;
 	}
 	.dac-san-after p{
 		width: 91%;
@@ -1108,8 +1150,8 @@ footer{
 		margin-top: 5%;
 	}
 	.dac-san p{
-		left: 8%;
-		width: 90%;
+		
+		width: 100%;
 	}
 	.dac-san-after p{
 		width: 91%;

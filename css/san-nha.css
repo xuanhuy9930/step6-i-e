@@ -278,3 +278,28 @@ ul{
 	.slide-tong{padding-bottom: 10% !important;}
 	.lh25-xs{line-height: 25px !important}
 }
+@media (min-width: 768px) and (max-width: 1023px)
+{
+	.san-pham{
+		display: block;
+		margin: auto;
+		margin-bottom: 5%;
+	}
+	.anh-duan img,
+	.img-td img{
+		width: 100%;
+	}
+	.tan-tam{
+		margin: auto;
+		float: none !important;
+	}
+	.lien-he{
+		padding: 0 !important;
+	}
+	.list-menu li{
+		display: none;
+	}
+	.phai h3{
+		text-align: center;
+	}
+}

@@ -108,6 +108,30 @@ $('.add').each(function(){
 jQuery(document).ready(function($) {
   $('.ontop').click(function() {
     $('html, body').animate({ scrollTop: 0 }, 'slow');
-
   })
+});
+// couter up
+$(document).scroll(function(){
+  if($('html').scrollTop() > $('.thanh-tich').offset().top - 1500){
+    console.log('ok1');
+    $('.number').each(function() {
+      var $this = $(this),
+          countTo = $this.attr('data-count');
+      $({ countNum: $this.text()}).animate({
+        countNum: countTo
+      },
+
+      {
+        duration: 3000,
+        easing:'linear',
+        step: function() {
+          $this.text(Math.floor(this.countNum));
+        },
+        complete: function() {
+          $this.text(this.countNum);
+          //alert('finished');
+        }
+      });  
+    });
+  };
 });
