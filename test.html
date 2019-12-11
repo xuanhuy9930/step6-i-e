@@ -15,220 +15,29 @@
 	<link rel="stylesheet" href="css/am-thuc-vn.css">
 </head>
 <style>
-	body {
-  background-color: black;
-}
-
-.accordion {
-  width: 100%;
-  height: 350px;
-  overflow: hidden;
-  margin: 0px auto;
-}
-
-.accordion ul {
-  width: 100%;
-  display: table;
-  table-layout: fixed;
-  margin: 0;
-  padding: 0;
-}
-
-.accordion ul li {
-  display: table-cell;
-  vertical-align: bottom;
-  position: relative;
-  width: 16.666%;
-  height: 350px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  transition: all 500ms ease-in-out;
-}
-
-.accordion ul li div {
-  display: block;
-  overflow: hidden;
-  width: 100%;
-}
-
-.accordion ul li div a {
-  display: block;
-  height: 350px;
-  width: 100%;
-  position: relative;
-  z-index: 3;
-  vertical-align: bottom;
-  padding: 15px 20px;
-  box-sizing: border-box;
-  color: #fff;
-  text-shadow: 1px 1px 2px #000;
-  /*filter: invert(100%);*/
-  text-decoration: none;
-  font-family: Open Sans, sans-serif;
-  transition: all 300ms ease-in-out;
-}
-
-.accordion ul li div a * {
-  opacity: 0;
-  margin: 0;
-  width: 100%;
-  text-overflow: ellipsis;
-  position: relative;
-  z-index: 5;
-  white-space: nowrap;
-  overflow: hidden;
-  -webkit-transform: translateX(-20px);
-  transform: translateX(-20px);
-  -webkit-transition: all 400ms ease-in-out;
-  transition: all 400ms ease-in-out;
-}
-.accordion ul li div a h2 {
-  font-family: Montserrat, sans-serif;
-  text-overflow: clip;
-  font-size: 32px;
-  text-transform: uppercase;
-  margin-bottom: 2px;
-  top: 160px;
-}
-
-.accordion ul li div a p {
-  top: 160px;
-  font-size: 18px;
-  padding-left: 1em;
-}
-
-.accordion ul li:nth-child(1) { 
-  background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_studio_portrait_photography_bob_harrington.jpg"); 
-  background-position: 50% 30%;
-}
-
-.accordion ul li:nth-child(2) { 
-  background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_cinema_flex_whale_wars_gavin_garrison.jpg"); 
- background-position: 70% 0%;
-}
-
-.accordion ul li:nth-child(3) { 
-  background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_studio_portrait_photography_bob_harrington_bts.jpg"); 
-background-position: 50% 50%;
-}
-
-.accordion ul li:nth-child(4) { 
-  background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_travel_rapidbox.jpg"); 
-  background-position: 30% 40%;
-}
-
-.accordion ul li:nth-child(5) { 
-  background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_enthusiast_portrait_photography_little_studio_basics_lights.jpg"); 
-  background-position: 60% 64%;
-}
-
-.accordion ul li:nth-child(6) { 
-  background-image: url("http://dev.fjwestcott.com/media/wysiwyg/home/home_ind_flex_enthusiast_portrait_photography.jpg"); 
-  background-position: 70% 25%;
-}
-
-.accordion ul li { background-size: cover; }
-.accordion ul:hover li { width: 10%; }
-.accordion ul:hover li:hover { width: 90%; }
-
-/*.accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.4); }*/
-
-.accordion ul:hover li:hover a * {
-  opacity: 1;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-}
- @media screen and (max-width: 680px) {
-  
-  body { margin: 0; }
-  .accordion { height: auto; }
-
-  .accordion ul li,
-  .accordion ul li:hover,
-  .accordion ul:hover li,
-  .accordion ul:hover li:hover {
-    position: relative;
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-    -webkit-transition: none;
-    transition: none;
-  }
-  .accordion ul li div a * {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-
+    
 </style>
 <body>
-	 
-  <div class="accordion">
-    <ul>
-      <li>
-        <div>
-          <a href="#" class="sliderLink">
-            <h2>Studio Lighting</h2>
-            <p>Lighting<br> Light Modifiers<br> Light Controls<br> Backdrops
-            </p>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div>
-          <a href="#" class="sliderLink">
-            <h2>Filmmaking Gear</h2>
-            <p>LED Lighting<br> Scrim Jim Cine<br> Chroma-Key
-            </p>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div>
-          <a href="#" class="sliderLink">
-            <h2>Speedlight Modifiers</h2>
-            <p>Apollo<br> LunaGrip
-              <br> Rapid Box</p>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div>
-          <a href="#" class="sliderLink">
-            <h2>Travel Photography</h2>
-            <p>Rapid Box<br> Reflectors
-              <br> Cases
-            </p>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div>
-          <a href="#" class="sliderLink">
-            <h2>Newborn Photography</h2>
-            <p>Props<br> Backdrops
-              <br> Lighting
-            </p>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div>
-          <a href="#" class="sliderLink">
-            <h2>Photo Enthusiast</h2>
-            <p>CFL Lighting<br> Reflectors
-              <br> Backdrops
-            </p>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </div>
+    <!DOCTYPE html>
+<html>
+<body>
+<img id="myImg" src="images/1976.jpg" width="107" height="98">
+<button onclick="myFunction2()">vao day</button>
+
+<script>
+ 
+
+var click =0;
+function myFunction2()
+{
+  document.getElementById("myImg").src = click%2==0?"images/1974.jpg":"images/1976.jpg";
+    click++;
+}
+</script>
 
 </body>
-<script type="text/javascript" src="libs/jquery-3.4.1.min.js"></script>
+</html>
+</body>
+<script src="libs/jquery/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="libs/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="libs/slick-1.8.1/slick/slick.min.js"></script>
-<script src="js/all-js.js"></script>
 </html>

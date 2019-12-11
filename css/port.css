@@ -239,6 +239,7 @@ ul{
 
 .text-about{
 	text-align: justify;
+	font-weight: bold;
 }
 .social-icon{
 	display: flex;

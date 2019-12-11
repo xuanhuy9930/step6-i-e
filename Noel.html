@@ -18,13 +18,13 @@
 </head>
 <body>
 	<div id="noel">
-		<header id="header">
-			<img class="w1 h1v pr" src="images/1974.jpg" alt="">
-			<div class="header1 pa t0 w1 ">
-				<a href=""><img class="w15 w50-xs lt50 trX-50 pa tp15" src="images/logo-noel.png" alt=""></a>
-				
+		<header id="header pr">
+			<img class="w1 h1v" id="myImg" src="images/1974.jpg" alt="">
+			<div class="header1 pa t0 w1" >
+				<a href="#"><img  onclick="myFunction2()" class="w15 w50-xs lt50 trX-50 pa tp15 logo" src="images/logo-noel.png" alt=""></a>
 			</div>
 			<div class="header2 pa b0 w1">
+				
 				<h2 class="pa btom140 lt50 trX-50 fs3 cw ffgv cve pr menu-text fw400">Menu</h2>
 				<span class="fs3 thanhCuộn pa btom70 lt50 trX-50 cw" onclick="openNav()">
 					<p class="mn-rsp"></p>
@@ -32,12 +32,12 @@
 					<p class="mn-rsp"></p>
 				</span>
 			</div>	
-			<div id="mySidenav" class="sidenav">
-				<a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-				<a href="#">Trang Chủ</a>
-				<a href="#">Giới Thiệu</a>
-				<a href="#">Tin Tức</a>
-				<a href="#">Liên Hệ</a>
+			<div id="mySidenav" class="sidenav wsn">
+				<a href="#!" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="#"  class="">Trang Chủ</a>
+				<a href="#"  class="">Giới Thiệu</a>
+				<a href="#"  class="">Tin Tức</a>
+				<a href="#"  class="">Liên Hệ</a>
 			</div>
 		</header>
 		<main>
@@ -45,15 +45,15 @@
 				<div class="gt-noel container mt5pt mb5pt pr">
 					<img class="w60 w1-xs" src="images/gt-noel.jpg" alt="">
 					<div class="text-gt-noel">
-						<h2 class="tac fs3 fs2-xs fs2-lg mb30 ffch cve ttc">Noel - Lễ giáng sinh</h2>
+						<h2 class="tac fs3 fs2-xs fs2-lg mb30 ffch clnoel ttc">Noel - Lễ giáng sinh</h2>
 						<p class="lh25 ti5 mb15 taj">Giáng sinh là dịp để mỗi gia đình đoàn tụ yêu thương, là lúc chúng ta quây quần, chia sẻ, nghỉ ngơi, tận hưởng không khí vui tươi bên bạn bè, người thân. Giáng sinh cũng là dịp để ta tự thưởng cho mình một ngày thật ý nghĩa, độc đáo theo cách của riêng ta</p>
-						<a class="tar db bấmĐc fwb fs11 ttc cve" href="">Xem thêm</a>
+						<a class="tar db bấmĐc fwb fs11 ttc clnoel" href="">Xem thêm</a>
 					</div>
 					
 				</div>
 			</section>
 			<section class="truyềnThống mb5pt">
-				<h2 class="tac fs3 fs2-xs fs14-sm mb30 ffch cve ttc">Món ăn truyền thống dịp giáng sinh</h2>
+				<h2 class="tac fs3 fs2-xs fs14-sm mb30 ffch clnoel ttc">Món ăn truyền thống dịp giáng sinh</h2>
 				<div class="container">
 					<div class="row gàTâyQuay">
 						<div class="col-md-6 p15p">
@@ -63,7 +63,7 @@
 							<div class="text-do-an">
 								<p>Sẽ không còn là Noel nữa, nếu trên bàn ăn không có món này: Gà Tây (Turkey). Gà Tây được nhà thám hiểm Sebastian Cabot đem về Anh vào thế kỷ thứ XVI. Sau đó, gà Tây quay trở thành món ăn phổ biến của người dân Anh mỗi dịp Giáng Sinh.</p>
 								<p>Nó nổi tiếng đến nỗi năm 1843, nhà văn Anh Charles Dickens đã đưa món này vào tác phẩm kinh điển A Christmas Carol của mình. Món ăn này lan truyền sang Úc từ năm 1788...</p>
-								<a class="tar db bấmĐc fwb fs11 ttc cve mt5pt" href="">Chi tiết</a>
+								<a class="tar db bấmĐc fwb fs11 ttc clnoel mt5pt" href="">Chi tiết</a>
 							</div>
 						</div>
 						<div class="col-md-6 p15p">
@@ -88,7 +88,7 @@
 							<div class="text-do-an cb">
 								<p>Tương truyền rằng thánh Boniface trong một hôm trên đường hành hương, Ngài tình cờ bắt gặp một nhóm những kẻ ngoại đạo sùng bái đang tập trung xunh quanh một cây sồi lớn, dùng một đứa trẻ để tế thần.</p>
 								<p>Để dừng buổi tế thần và cứu đứa trẻ, thánh nhân hạ gục cây sồi chỉ bằng một quả đấm! Tại nơi đó đã mọc lên một cây thông nhỏ. Vị thánh nói ...</p>
-								<a class="tar db bấmĐc fwb fs11 ttc cve mt5pt" href="">Chi tiết</a>
+								<a class="tar db bấmĐc fwb fs11 ttc clnoel mt5pt" href="">Chi tiết</a>
 							</div>
 						</div>
 					</div>
@@ -103,7 +103,7 @@
 							<div class="text-do-an">
 								<p>Cách đây rất lâu, kẹo cây thẳng và chỉ có màu trắng. Nhưng vào khoảng năm 1670, trưởng đội hợp xướng Cologne Cathedral đã thử làm một chiếc kẹo hình gậy. Ông mang tặng cho những người chăn cừu và ca sĩ của mình. Vào thế kỷ thứ XIX, người ta thêm những vằn đỏ và vị bạc hà vào kẹo.</p>
 								<p>Giờ đây mỗi dịp Giáng sinh, chiếc kẹo hình cây ba-toong với những vằn trắng, đỏ rất ngon và vui mắt này trở thành thức quà hấp dẫn đối với trẻ em từ đó....</p>
-								<a class="tar db bấmĐc fwb fs11 ttc cve mt5pt" href="">Chi tiết</a>
+								<a class="tar db bấmĐc fwb fs11 ttc clnoel mt5pt" href="">Chi tiết</a>
 							</div>
 						</div>
 						<div class="col-md-6 p15p">
@@ -115,7 +115,7 @@
 				</div>
 			</section>
 			<section class="thúVịNoel dn-xs">
-				<h2 class="tac fs3 fs14-xs mb30 ffch cve ttc mt5pt">Thú vị đón giáng sinh trên thế giới</h2>
+				<h2 class="tac fs3 fs14-xs mb30 ffch clnoel ttc mt5pt">Thú vị đón giáng sinh trên thế giới</h2>
 				<div class="container">
 					<div class="row">
 						<div class=" col-md-6 don-noel p15p pr">
@@ -152,7 +152,7 @@
 				</div>
 			</section>
 			<section class="tinTức mb5pt">
-				<h2 class="tac fs3 mb30 ffch cve ttc">Tin tức</h2>
+				<h2 class="tac fs3 mb30 ffch clnoel ttc">Tin tức</h2>
 				<div class="container">
 					<div class="row p15p mb50">
 						<div class="col-md-4 p15p">
@@ -194,6 +194,7 @@
 			</div>
 		</footer>
 	</div>
+	<div class="mo w1 h1v bgc03 pa t0 dn pf" id="rsp" ></div>
 </body>
 <script type="text/javascript" src="libs/jquery/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="libs/slick-1.8.1/slick/slick.min.js"></script>
